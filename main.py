@@ -21,12 +21,12 @@ class DemoExtension(Extension):
 
 class KeywordQueryEventListener(EventListener):
     def on_event(self, event, extension):
-        md5Hash='suvo'
+        query = event.get_argument()
+        md5Hash=hashlib.md5(query).hexdigest()
         items = [
             ExtensionResultItem(
                 icon="images/icon.svg",
                 name="MD5 Hash = "+md5Hash,
-                description="Enter to copy the result\nAlt-enter to copy the expression",
                 on_enter=CopyToClipboardAction(md5Hash)
             )
         ]

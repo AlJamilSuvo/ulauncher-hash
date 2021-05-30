@@ -23,7 +23,7 @@ class KeywordQueryEventListener(EventListener):
     def on_event(self, event, extension):
         query = event.get_argument()
         logger.info("preferences %s" % json.dumps(extension.preferences))
-        md5Hash=hashlib.md5(query)
+        md5Hash=hashlib.md5(query).hexdigest()
         items = [
             ExtensionResultItem(
                 icon="images/icon.svg",

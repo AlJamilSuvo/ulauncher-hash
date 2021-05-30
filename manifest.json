@@ -4,9 +4,6 @@
   "description": "Generate different types of hash from string",
   "developer_name": "jamil_suvo",
   "icon": "images/icon.svg",
-  "options": {
-    "query_debounce": 0.05
-  },
   "preferences": [
     {
       "id": "hash_generator",

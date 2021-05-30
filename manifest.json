@@ -4,12 +4,13 @@
   "description": "Generate different types of hash from string",
   "developer_name": "jamil_suvo",
   "icon": "images/icon.svg",
-  "preferences": [
-    {
-      "id": "hash_generator",
-      "type": "keyword",
-      "name": "Hash Generator",
-      "default_value": "hash"
-    }
-  ]
+  "options": {
+    "query_debounce": 0.5
+  },
+  "preferences": [{
+    "id": "hash_generator",
+    "type": "keyword",
+    "name": "Hash Generator",
+    "default_value": "hash"
+  }]
 }

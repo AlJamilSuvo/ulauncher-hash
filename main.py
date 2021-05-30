@@ -21,7 +21,7 @@ class DemoExtension(Extension):
 
 class KeywordQueryEventListener(EventListener):
     def on_event(self, event, extension):
-        md5Hash=event.get_argument()
+        md5Hash=hashlib.md5(event.get_argument()).hexdigest()
         items = [
             ExtensionResultItem(
                 icon="images/icon.svg",

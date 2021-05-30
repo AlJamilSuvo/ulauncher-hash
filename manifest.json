@@ -1,0 +1,18 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Hash Generator",
+  "description": "Generate different types of hash from string",
+  "developer_name": "jamil_suvo",
+  "icon": "images/icon.svg",
+  "options": {
+    "query_debounce": 0.05
+  },
+  "preferences": [
+    {
+      "id": "hash_generator",
+      "type": "keyword",
+      "name": "Hash Generator",
+      "default_value": "hash"
+    }
+  ]
+}
